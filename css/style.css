@@ -1,0 +1,350 @@
+/* line 5, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby200/lib/ruby/gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Colors Default   */
+/* Font Defaults */
+/* line 1, ../components/sass/_base.scss */
+body {
+  font-family: Calibri, Arial, Serif;
+  font-size: 16px;
+}
+
+/* line 5, ../components/sass/_base.scss */
+.tbl-bottom-border {
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 9, ../components/sass/_base.scss */
+.status-text span {
+  margin-right: 5px;
+}
+
+/* line 13, ../components/sass/_base.scss */
+.info-cell.owner {
+  width: 15%;
+}
+
+/* line 17, ../components/sass/_base.scss */
+.info-cell.time {
+  width: 17%;
+}
+
+/* line 1, ../components/sass/_layout.scss */
+.task-tbl {
+  padding: 25px;
+}
+/* line 4, ../components/sass/_layout.scss */
+.task-tbl-header .info-cell {
+  font-weight: bold;
+}
+/* line 9, ../components/sass/_layout.scss */
+.task-tbl-row .info-cell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #7c7c7c;
+}
+/* line 13, ../components/sass/_layout.scss */
+.task-tbl-row .info-cell-head {
+  cursor: pointer;
+}
+/* line 17, ../components/sass/_layout.scss */
+.task-tbl-row .info-cell.selected {
+  font-weight: bold;
+}
+
+/* line 24, ../components/sass/_layout.scss */
+.tbl-row-inner {
+  border-right: 1px solid #d2d2d2;
+}
+/* line 26, ../components/sass/_layout.scss */
+.tbl-row-inner:hover {
+  background-color: #ebebeb;
+}
+
+/* line 32, ../components/sass/_layout.scss */
+.tbl-row-inner.selected {
+  border-top: none;
+}
+/* line 34, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-detail {
+  display: block;
+}
+/* line 37, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-open-warning {
+  border-top: 3px solid #f8ac59;
+  border-right: 2px solid #d2d2d2;
+}
+/* line 43, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.warning .info-cell-status .status-text {
+  color: #f8ac59;
+}
+/* line 48, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.warning .task-status-info .fa-check-square {
+  color: #f8ac59;
+}
+/* line 56, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.warning .info-detail-row-cell .icon-size .fa-square,
+.tbl-row-inner.selected.warning .info-detail-row-cell .chart-info .fa-square {
+  color: #f8ac59;
+}
+/* line 61, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.warning .info-detail-row-cell .task-progress, .tbl-row-inner.selected.warning .info-detail-row-cell .fa-folder-o, .tbl-row-inner.selected.warning .info-detail-row-cell .fa-pie-chart {
+  color: #f8ac59;
+}
+/* line 71, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-open-info {
+  border-top: 3px solid #1c84c6;
+  border-right: 2px solid #d2d2d2;
+}
+/* line 77, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.info .info-cell-status .status-text {
+  color: #1c84c6;
+}
+/* line 82, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.info .task-status-info .fa-check-square {
+  color: #1c84c6;
+}
+/* line 90, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.info .info-detail-row-cell .icon-size .fa-square,
+.tbl-row-inner.selected.info .info-detail-row-cell .chart-info .fa-square {
+  color: #1c84c6;
+}
+/* line 94, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.info .info-detail-row-cell .task-progress, .tbl-row-inner.selected.info .info-detail-row-cell .fa-folder-o, .tbl-row-inner.selected.info .info-detail-row-cell .fa-pie-chart {
+  color: #1c84c6;
+}
+/* line 104, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-open-success {
+  border-top: 3px solid #1ab394;
+  border-right: 2px solid #d2d2d2;
+}
+/* line 110, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.success .info-cell-status .status-text {
+  color: #1ab394;
+}
+/* line 115, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.success .task-status-info .fa-check-square {
+  color: #1ab394;
+}
+/* line 123, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.success .info-detail-row-cell .icon-size .fa-square,
+.tbl-row-inner.selected.success .info-detail-row-cell .chart-info .fa-square {
+  color: #1ab394;
+}
+/* line 128, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.success .info-detail-row-cell .task-progress, .tbl-row-inner.selected.success .info-detail-row-cell .fa-folder-o, .tbl-row-inner.selected.success .info-detail-row-cell .fa-pie-chart {
+  color: #1ab394;
+}
+/* line 139, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-open-danger {
+  border-top: 3px solid #ed5565;
+  border-right: 2px solid #d2d2d2;
+}
+/* line 145, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.danger .info-cell-status .status-text {
+  color: #ed5565;
+}
+/* line 150, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.danger .task-status-info .fa-check-square {
+  color: #ed5565;
+}
+/* line 158, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.danger .info-detail-row-cell .icon-size .fa-square,
+.tbl-row-inner.selected.danger .info-detail-row-cell .chart-info .fa-square {
+  color: #ed5565;
+}
+/* line 162, ../components/sass/_layout.scss */
+.tbl-row-inner.selected.danger .info-detail-row-cell .task-progress, .tbl-row-inner.selected.danger .info-detail-row-cell .fa-folder-o, .tbl-row-inner.selected.danger .info-detail-row-cell .fa-pie-chart {
+  color: #ed5565;
+}
+/* line 172, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-status {
+  line-height: 60px;
+  text-align: center;
+}
+/* line 175, ../components/sass/_layout.scss */
+.tbl-row-inner.selected .info-cell-status .status-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* line 183, ../components/sass/_layout.scss */
+.info-cell-rt {
+  border-top: 1px solid #d2d2d2;
+}
+/* line 186, ../components/sass/_layout.scss */
+.info-cell-lt {
+  border-top: 1px solid #d2d2d2;
+}
+/* line 189, ../components/sass/_layout.scss */
+.info-cell-detail {
+  display: none;
+  border-top: 1px solid #d2d2d2;
+  padding: 15px;
+}
+/* line 194, ../components/sass/_layout.scss */
+.info-cell-gray {
+  border-left: 7px solid #d2d2d2;
+}
+/* line 197, ../components/sass/_layout.scss */
+.info-cell-warning {
+  border-left: 7px solid #f8ac59;
+}
+/* line 199, ../components/sass/_layout.scss */
+.info-cell-warning .status-text {
+  color: #f8ac59;
+}
+/* line 203, ../components/sass/_layout.scss */
+.info-cell-info {
+  border-left: 7px solid #1c84c6;
+}
+/* line 205, ../components/sass/_layout.scss */
+.info-cell-info .status-text {
+  color: #1c84c6;
+}
+/* line 209, ../components/sass/_layout.scss */
+.info-cell-success {
+  border-left: 7px solid #1ab394;
+}
+/* line 211, ../components/sass/_layout.scss */
+.info-cell-success .status-text {
+  color: #1ab394;
+}
+/* line 215, ../components/sass/_layout.scss */
+.info-cell-danger {
+  border-left: 7px solid #ed5565;
+}
+/* line 217, ../components/sass/_layout.scss */
+.info-cell-danger .status-text {
+  color: #ed5565;
+}
+/* line 222, ../components/sass/_layout.scss */
+.info-cell-status .status-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* line 229, ../components/sass/_layout.scss */
+.build-info,
+.unit-test {
+  position: relative;
+}
+/* line 232, ../components/sass/_layout.scss */
+.build-info:before,
+.unit-test:before {
+  position: absolute;
+  font-family: 'FontAwesome';
+  top: 10px;
+  right: 10px;
+  content: "\f105";
+  font-size: 35px;
+  color: #d2d2d2;
+}
+
+/* line 244, ../components/sass/_layout.scss */
+.info-detail-row-cell .icon-text {
+  font-size: 12px;
+  width: 45%;
+  display: inline-block;
+}
+/* line 249, ../components/sass/_layout.scss */
+.info-detail-row-cell .chart-info {
+  width: 45%;
+  vertical-align: top;
+  margin-left: 8px;
+  line-height: 20px;
+}
+/* line 256, ../components/sass/_layout.scss */
+.info-detail-row-cell .chart-info span {
+  display: inline-block;
+}
+/* line 260, ../components/sass/_layout.scss */
+.info-detail-row-cell .task-progress {
+  font-size: 25px;
+}
+/* line 264, ../components/sass/_layout.scss */
+.info-detail-row-cell .task-status-info {
+  line-height: 24px;
+}
+/* line 267, ../components/sass/_layout.scss */
+.info-detail-row-cell .task-status-time {
+  font-size: 12px;
+}
+
+/* line 275, ../components/sass/_layout.scss */
+.build-info .icon-size {
+  font-size: 40px;
+}
+
+/* line 282, ../components/sass/_layout.scss */
+.functional-test .icon-size,
+.unit-test .icon-size {
+  font-size: 62px;
+}
+
+/* line 289, ../components/sass/_layout.scss */
+.unit-test .info-detail-row-cell .chart-info {
+  width: 35%;
+}

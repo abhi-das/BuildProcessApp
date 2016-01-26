@@ -1,0 +1,19 @@
+body{
+	font-family: Calibri, Arial, Serif;
+	font-size: $pageFontSize;
+}
+.tbl-bottom-border{
+	border-bottom: 1px solid #ccc;
+}
+
+.status-text span{
+	margin-right: 5px;
+}
+
+.info-cell.owner{
+	width: 15%;
+}
+
+.info-cell.time{
+	width: 17%;
+}

@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="task-tbl">
+    <!--Table Header-->
+    <div class="task-tbl-row task-tbl-header">
+      
+      <div class="tbl-row-inner row info-cell-gray">
+        <div class="col-md-10 info-cell-lt">
+          <div class="row info-cell-head">
+            <div class="info-cell col-md-2">Changelist</div>
+            <div class="info-cell col-md-2">Owner</div>
+            <div class="info-cell col-md-2">Time Started</div>
+            <div class="info-cell col-md-2">Build</div>
+            <div class="info-cell col-md-2">Unit Test</div>
+            <div class="info-cell col-md-2">Functional Test</div>
+          </div>
+        </div>
+        <div class="col-md-2 info-cell-rt info-cell">Status</div>
+      </div>
+      
+    </div>
+    <!--Table Content Rows-->
+    <div class="task-tbl-row" ng-repeat="dt in statusData" >
+      <div class="tbl-row-inner row" 
+           ng-class="getStatusClass(dt, $index, $last)"
+           ng-click="selectRowHandler(dt)">
+        <div class="col-md-10 info-cell-lt"
+              ng-class="selectedRowTopBarTheme($index)">
+          <div class="row info-cell-head"
+                ng-class="{'info-cell-gray': dt.selected}">
+            <div class="info-cell col-md-2">{{dt.id}}</div>
+            <div class="info-cell owner col-md-2">{{dt.owner}}</div>
+            <div class="info-cell time col-md-2">{{dt.date}} {{dt.time}}</div>
+            <div class="info-cell col-md-6">
+              <ul class="build-progress-bar">
+                <li class="build-progress-bar-itm " ></li>
+                <li class="build-progress-bar-itm " ></li>
+                <li class="build-progress-bar-itm " ></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="row info-cell info-cell-detail"
+                ng-class="{'info-cell-gray': dt.selected}">
+            <!-- Detail Row 1-->
+            <div class="col-md-4 info-detail-row build-info">
+              <div class="row">
+                <div class="col-md-4 info-detail-row-cell">
+                  <p class="task-status-info">{{dt.process.build.id}} <span class="fa {{statusIcon.passed}}"></span> 
+                    <span class="task-status-time fa {{statusIcon.clock}}"> {{dt.process.build.summary.time}}</span></p>
+                </div>
+                <div class="col-md-6  info-detail-row-cell">
+                  <span class="icon-text">
+                    <span class="fa {{statusIcon.folder}} icon-size"></span>
+                    {{dt['process']['build']['summary']['folder']['id1']}}
+                  </span>
+                  <span class="icon-text">
+                    <span class="fa {{statusIcon.folder}} icon-size"></span>
+                    {{dt['process']['build']['summary']['folder']['id2']}}
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Detail Row 2-->
+            <div class="col-md-4 info-detail-row unit-test">
+              <div class="row">
+                <div class="col-md-5 info-detail-row-cell">
+                  <p class="task-status-info">{{dt.process.unitTest.id}} <span class="fa {{statusIcon.passed}}"></span> 
+                    <span class="task-progress">{{dt.process.unitTest.summary.progress}}</span></p>
+                </div>
+                <div class="col-md-7  info-detail-row-cell">
+                  <span class="icon-text"><span class="fa {{statusIcon.pi}} icon-size"></span></span>
+                  <span class="icon-text chart-info">
+                    <span><span class="fa {{statusIcon.square}}"></span> {{dt.process.unitTest.summary.chart.completed}}</span>
+                    <span><span class="fa {{statusIcon.square}}"></span> {{dt.process.unitTest.summary.chart.pending}}</span>
+                    <span><span class="fa {{statusIcon.clock}}"></span> {{dt.process.unitTest.summary.chart.time}}</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Detail Row 3-->
+            <div class="col-md-4 info-detail-row functional-test">
+              <div class="row">
+                <div class="col-md-6 info-detail-row-cell">
+                  <p class="task-status-info">{{dt.process.functionalTest.id}} <span class="fa {{statusIcon.passed}}"></span> 
+                    <span class="task-progress">{{dt.process.functionalTest.summary.progress}}</span></p>
+                </div>
+                <div class="col-md-6  info-detail-row-cell">
+                  <span class="icon-text"><span class="fa {{statusIcon.pi}} icon-size"></span></span>
+                  <span class="icon-text chart-info">
+                    <span><span class="fa {{statusIcon.square}}"></span> {{dt.process.functionalTest.summary.chart.completed}}</span>
+                    <span><span class="fa {{statusIcon.square}}"></span> {{dt.process.functionalTest.summary.chart.pending}}</span>
+                    <span><span class="fa {{statusIcon.clock}}"></span> {{dt.process.functionalTest.summary.chart.time}}</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div> 
+        </div>
+        <div class="col-md-2 info-cell-rt info-cell">
+          <div class="info-cell-status">
+              <span class="status-text"><span class="fa" ng-class="getStatusIcon($index)"></span>{{dt.status}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
