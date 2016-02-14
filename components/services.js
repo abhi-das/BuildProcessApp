@@ -14,7 +14,7 @@
 
 		statusService.getBuildStatus = function(){
 
-			return $http.post("data_source/build-process-status.json");
+			return $http.get("data_source/build-process-status.json");
 		};
 
 		return statusService;
